@@ -1,0 +1,33 @@
+@import 'globals';
+
+.fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0;
+  width: 150px;
+}
+
+.lenged {
+  color: red;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.background {
+  background-color: var(--toggle-background);
+}
