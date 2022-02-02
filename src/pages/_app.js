@@ -2,9 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import '../../styles/reset.scss';
 import Toggle from '../components/toggle_switch';
-import style from '../../styles/Home.module.scss';
-import '../../styles/globals.scss';
-
+import '../../styles/Home.scss';
 function App({ Component, pageProps }) {
   return (
     <>
