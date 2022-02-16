@@ -1,0 +1,79 @@
+.calculator {
+  width: 80vw;
+  max-width: 25rem;
+  border: 1px solid red;
+}
+
+.screen {
+  padding: 1.5rem 1rem;
+  background-color: var(--screen-background);
+  text-align: right;
+  font-size: 2rem;
+  color: var(--light-text);
+  border-radius: 10px;
+  height: 6rem;
+}
+
+.keypad {
+  border: 3px solid green;
+  padding: 1rem 1.5rem;
+  background-color: var(--keypad-background);
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+.simple {
+  height: 40px;
+  font-size: 1.4rem;
+  border: none;
+  background-color: var(--key-background-numbers);
+  color: var(--dark-text);
+  box-shadow: 1px 3px 0 var(--key-shadow-numbers);
+  border-radius: 8px;
+  &:active {
+    box-shadow: 0px 0px;
+  }
+}
+
+.del {
+  height: 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--key-background-reset);
+  border-radius: 8px;
+  box-shadow: 1px 3px 0 var(--key-shadow-reset);
+  color: var(--light-text);
+  &:active {
+    box-shadow: 0px 0px;
+  }
+}
+.reset {
+  height: 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  grid-column: 1/3;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--key-background-reset);
+  box-shadow: 1px 3px 0 var(--key-shadow-reset);
+  color: var(--light-text);
+  &:active {
+    box-shadow: 0px 0px;
+  }
+}
+.equal {
+  height: 40px;
+  font-size: 1.4rem;
+  background-color: var(--key-background-equal);
+  box-shadow: 1px 3px 0 var(--key-shadow-equal);
+  grid-column: 3/-1;
+  border: none;
+  border-radius: 8px;
+  color: var(--light-text);
+  &:active {
+    box-shadow: 0px 0px;
+  }
+}
