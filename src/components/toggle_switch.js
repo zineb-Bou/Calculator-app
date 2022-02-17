@@ -1,4 +1,10 @@
-function Toggle() {
+import { useState } from 'react';
+function Toggle(props) {
+  const [theme, setTheme] = useState('dark');
+  const handleChange = (event) => {
+    setTheme(event.target.value);
+    props.handleChange(event.target.value);
+  };
   return (
     <fieldset
       className="fieldset"
@@ -13,9 +19,27 @@ function Toggle() {
           <label htmlFor="violet">3</label>
         </span>
         <span className="inputs">
-          <input type="radio" name="theme" id="dark" />
-          <input type="radio" name="theme" id="light" />
-          <input type="radio" name="theme" id="violet" />
+          <input
+            type="radio"
+            id="dark"
+            value="dark"
+            checked={theme === 'dark'}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            id="light"
+            value="light"
+            checked={theme === 'light'}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            id="violet"
+            value="violet"
+            checked={theme === 'violet'}
+            onChange={handleChange}
+          />
           <span aria-hidden="true" className="wrapper"></span>
           <span aria-hidden="true" className="switcher"></span>
         </span>

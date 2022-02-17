@@ -1,7 +1,6 @@
 .calculator {
   width: 80vw;
   max-width: 25rem;
-  border: 1px solid red;
 }
 
 .screen {
@@ -9,13 +8,13 @@
   background-color: var(--screen-background);
   text-align: right;
   font-size: 2rem;
-  color: var(--light-text);
+  color: var(--text-screen);
   border-radius: 10px;
   height: 6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .keypad {
-  border: 3px solid green;
   padding: 1rem 1.5rem;
   background-color: var(--keypad-background);
   margin-top: 20px;
@@ -23,13 +22,16 @@
   grid-template-columns: repeat(4, 20%);
   grid-template-rows: repeat(5, auto);
   gap: 20px;
+  border-radius: 10px;
 }
+
+//button style
 .simple {
   height: 40px;
   font-size: 1.4rem;
   border: none;
   background-color: var(--key-background-numbers);
-  color: var(--dark-text);
+  color: var(--text-simple-btn);
   box-shadow: 1px 3px 0 var(--key-shadow-numbers);
   border-radius: 8px;
   &:active {
@@ -45,7 +47,7 @@
   background-color: var(--key-background-reset);
   border-radius: 8px;
   box-shadow: 1px 3px 0 var(--key-shadow-reset);
-  color: var(--light-text);
+  color: var(--text-btn);
   &:active {
     box-shadow: 0px 0px;
   }
@@ -59,7 +61,7 @@
   border-radius: 8px;
   background-color: var(--key-background-reset);
   box-shadow: 1px 3px 0 var(--key-shadow-reset);
-  color: var(--light-text);
+  color: var(--text-btn);
   &:active {
     box-shadow: 0px 0px;
   }
@@ -72,7 +74,7 @@
   grid-column: 3/-1;
   border: none;
   border-radius: 8px;
-  color: var(--light-text);
+  color: var(--text-btn);
   &:active {
     box-shadow: 0px 0px;
   }

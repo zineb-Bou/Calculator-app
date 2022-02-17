@@ -2,9 +2,14 @@ import Head from 'next/head';
 import * as React from 'react';
 import Header from '../components/header';
 import Calculator from '../components/calculator';
+import { useState } from 'react';
 export default function Home() {
+  const [theme, setTheme] = useState('dark');
+  const handleChange = (theme) => {
+    setTheme(theme);
+  };
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>Calculator app</title>
         <meta name="description" content="" />
@@ -29,8 +34,10 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Header />
-      <Calculator />
-    </React.Fragment>
+      <div className="container" data-theme={theme}>
+        <Header handleChange={handleChange} />
+        <Calculator />
+      </div>
+    </>
   );
 }

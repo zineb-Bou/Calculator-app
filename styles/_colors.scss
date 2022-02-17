@@ -13,8 +13,10 @@
   --key-background-numbers: hsl(30, 25%, 89%);
   --key-shadow-numbers: hsl(28, 16%, 65%);
 
-  --dark-text: hsl(221, 14%, 31%);
-  --light-text: hsl(0, 0%, 100%);
+  --text-simple-btn: hsl(221, 14%, 31%);
+  --text-screen: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+  --text-btn: hsl(0, 0%, 100%);
 }
 
 [data-theme='light'] {
@@ -32,8 +34,10 @@
   --key-background-numbers: hsl(45, 7%, 89%);
   --key-shadow-numbers: hsl(35, 11%, 61%);
 
-  --dark-text: hsl(60, 10%, 19%);
-  --light-text: hsl(0, 0, 100%);
+  --text-simple-btn: hsl(60, 10%, 19%);
+  --text-screen: hsl(60, 10%, 19%);
+  --text: hsl(60, 10%, 19%);
+  --text-btn: hsl(0, 0%, 100%);
 }
 
 [data-theme='violet'] {
@@ -51,7 +55,8 @@
   --key-background-numbers: hsl(268, 47%, 21%);
   --key-shadow-numbers: hsl(290, 70%, 36%);
 
-  --dark-text: hsl(198, 20%, 13%);
-  --light-text: hsl(0, 0, 100%);
-  --yellow-text: hsl(52, 100%, 62%);
+  --text-simple-btn: hsl(52, 100%, 62%);
+  --text: hsl(52, 100%, 62%);
+  --text-screen: hsl(52, 100%, 62%);
+  --text-btn: hsl(0, 0%, 100%);
 }

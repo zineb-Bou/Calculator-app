@@ -8,22 +8,29 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Spartan', sans-serif;
-  background-color: var(--main-background);
-  display: grid;
-  place-items: center;
 }
-
+.container {
+  margin: 0;
+  background-color: var(--main-background);
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  transition: all 0.5s;
+}
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
   width: 80vw;
   max-width: 25rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .title {
-  color: var(--light-text);
+  color: var(--text);
+  display: inline-block;
 }
 
 .fieldset {
@@ -39,19 +46,18 @@ body {
 .button_name {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: var(--light-text);
+  color: var(--text);
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  // border: 1px solid green;
 }
 
 .labels {
   display: flex;
   justify-content: space-between;
-  color: var(--light-text);
+  color: var(--text);
 }
 
 .inputs {
@@ -84,7 +90,7 @@ body {
     display: block;
     background-color: var(--key-background-equal);
     border-radius: 50px;
-    left: 0.2rem;
+    left: 0.3rem;
     position: absolute;
     transition: all 0.1s ease-out;
   }

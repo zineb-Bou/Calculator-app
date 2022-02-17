@@ -11,7 +11,6 @@ function Calculator() {
   });
   const handleOnclik = (char) => {
     setState(calculate(state, char));
-    console.log(calculate(state, char));
   };
   return (
     <div className="calculator">
