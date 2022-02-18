@@ -1,7 +1,4 @@
 import { useState } from 'react';
-/** @jsxImportSource @emotion/react */
-import { jsx } from '@emotion/react';
-import { css } from '@emotion/react';
 
 function Toggle(props) {
   const [theme, setTheme] = useState('dark');
