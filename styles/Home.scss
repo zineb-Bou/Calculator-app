@@ -41,17 +41,22 @@ body {
   justify-content: space-between;
   padding: 0;
   width: 130px;
+  position: relative;
 }
 
 .button_name {
   font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--text);
+  position: absolute;
+  left: 0;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
+  right: 0;
+  position: absolute;
 }
 
 .labels {

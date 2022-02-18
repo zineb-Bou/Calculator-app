@@ -3,6 +3,7 @@ import * as React from 'react';
 import Header from '../components/header';
 import Calculator from '../components/calculator';
 import { useState } from 'react';
+
 export default function Home() {
   const [theme, setTheme] = useState('dark');
   const handleChange = (theme) => {

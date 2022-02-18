@@ -1,4 +1,8 @@
 import { useState } from 'react';
+/** @jsxImportSource @emotion/react */
+import { jsx } from '@emotion/react';
+import { css } from '@emotion/react';
+
 function Toggle(props) {
   const [theme, setTheme] = useState('dark');
   const handleChange = (event) => {
@@ -11,7 +15,7 @@ function Toggle(props) {
       aria-label="theme switcher"
       role="radiogroup"
     >
-      <h3 className="button_name">Theme</h3>
+      <legend className="button_name">Theme</legend>
       <div className="buttons">
         <span className="labels">
           <label htmlFor="dark">1</label>
